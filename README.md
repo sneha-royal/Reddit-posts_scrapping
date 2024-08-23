@@ -20,3 +20,47 @@ You can install the required Python packages using pip:
 
 ```bash
 pip install praw pandas
+
+Setup
+1.Clone the Repository
+
+git clone https://github.com/youruser/reddit-scraper.git
+cd reddit-scraper
+
+2.Configure Reddit API Credentials
+
+You need to have a Reddit account and create a Reddit app to get your client_id, client_secret, and user_agent. Set these in the script as follows:
+
+reddit = praw.Reddit(
+    client_id='YOUR_CLIENT_ID',
+    client_secret='YOUR_CLIENT_SECRET',
+    user_agent='YOUR_USER_AGENT'
+)
+
+3.Run the Script
+
+Execute the script by running:
+
+python reddit_scraper.py
+You will be prompted to enter the subreddit name and the number of top posts you wish to scrape.
+
+4.Usage
+Enter the Subreddit Name: Input the name of the subreddit from which you want to scrape posts (e.g., python, technology).
+
+Specify the Number of Posts: Enter the number of top posts you want to scrape. Ensure the number is greater than zero.
+
+View Progress: The script will show progress every 10 posts processed.
+
+Output: The scraped data will be saved in an Excel file named after the subreddit (e.g., python.xlsx).
+
+Example
+For example, if you want to scrape the top 50 posts from the python subreddit, you would input:
+Enter the name of the subreddit: python
+Number of posts to scrape: 50
+After running the script, you will find a file named python.xlsx in the script's directory containing the scraped data.
+
+Error Handling
+The script includes basic error handling:
+
+If you enter an invalid number of posts (e.g., a negative number or zero), the script will raise a ValueError.
+If any other error occurs during execution, the script will display an error message.
