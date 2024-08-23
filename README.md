@@ -15,11 +15,13 @@ Ensure you have the following installed:
 - Python 3.x
 - `praw` library
 - `pandas` library
+- `openpyxl` library
 
 You can install the required Python packages using pip:
 
 ```bash
-pip install praw pandas
+pip install praw pandas openpyxl
+
 
 Setup
 1.Clone the Repository
