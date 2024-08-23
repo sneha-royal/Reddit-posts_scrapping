@@ -24,8 +24,8 @@ pip install praw pandas
 Setup
 1.Clone the Repository
 
-git clone https://github.com/youruser/reddit-scraper.git
-cd reddit-scraper
+git clone https://github.com/sneha-royal/Reddit-posts_scrapping.git
+cd Reddit-posts_scrapping
 
 2.Configure Reddit API Credentials
 
