@@ -43,7 +43,7 @@ reddit = praw.Reddit(
 
 Execute the script by running:
 
-python reddit_scraper.py
+python redit.py
 You will be prompted to enter the subreddit name and the number of top posts you wish to scrape.
 
 4.Usage
